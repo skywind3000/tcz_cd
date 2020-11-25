@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #======================================================================
 #
-# tcz.py - Change Directory in Total Commander with fzf
+# tcz_cd.py - Change Directory in Total Commander with fzf
 #
 # Created by skywind on 2020/10/31
 # Last Modified: 2020/10/31 22:15:03
