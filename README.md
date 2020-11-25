@@ -30,44 +30,44 @@ scoop install peco
 
 Copy tcz_cd.py into one of the subdirectory:
 
-    ```
-    cd totalcmd
-    mkdir tools
-    copy /path/to/tcz.py tools
-    ```
+```
+cd totalcmd
+mkdir tools
+copy /path/to/tcz.py tools
+```
 
-    The commands above will copy `tcz.py` into `%COMMANDER_PATH%\tools`.
+The commands above will copy `tcz.py` into `%COMMANDER_PATH%\tools`.
 
 Edit your `usercmd.ini` and add the following code:
 
-    ```dosini 
-    [em_tcz_mru]
-    cmd=%COMMANDER_PATH%\tools\tcz_cd.py
-    param=-m
+```dosini 
+[em_tcz_mru]
+cmd=%COMMANDER_PATH%\tools\tcz_cd.py
+param=-m
 
-    [em_tcz_forward]
-    cmd=%COMMANDER_PATH%\tools\tcz_cd.py
-    param=-f
-    
-    [em_tcz_backward]
-    cmd=%COMMANDER_PATH%\tools\tcz_cd.py
-    param=-b
-    
-    [em_tcz_project]
-    cmd=%COMMANDER_PATH%\tools\tcz_cd.py
-    param=-p
-    
-    [em_tcz_root]
-    cmd=%COMMANDER_PATH%\tools\tcz_cd.py
-    param=-r
-    ```
+[em_tcz_forward]
+cmd=%COMMANDER_PATH%\tools\tcz_cd.py
+param=-f
+
+[em_tcz_backward]
+cmd=%COMMANDER_PATH%\tools\tcz_cd.py
+param=-b
+
+[em_tcz_project]
+cmd=%COMMANDER_PATH%\tools\tcz_cd.py
+param=-p
+
+[em_tcz_root]
+cmd=%COMMANDER_PATH%\tools\tcz_cd.py
+param=-r
+```
 After this, you can try `em_tcz_mru` in TC's command line. If it works correctly, assign a keymap for these commands, edit `wincmd.ini`:
 
-    ```
-    [Shortcuts]
-    A+L=em_tcz_mru
-    A+P=em_tcz_forward
-    ```
+```
+[Shortcuts]
+A+L=em_tcz_mru
+A+P=em_tcz_forward
+```
 
 ## Usage
 
